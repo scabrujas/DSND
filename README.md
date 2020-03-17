@@ -27,9 +27,15 @@ Published in https://medium.com/@scabrujas/how-to-succeed-in-airbnb-bostons-mark
 Jupyter Notebook with the data analysis and the ML model (Project1.ipynb)
 Boston Airbnb data (listings.csv): http://insideairbnb.com/get-the-data.html
 
-## libraries used:
+## Libraries used:
 - Pandas
 - Numpy
 - Scikit-learn
 - Seaborn
 - Matplot
+
+## Conclusions
+- We preprocessed the Boston Airbnb data,taking care of missing values and qualitative variables.
+- We created a Machine Learning model to estimate the Airbnb prices in Boston.
+- We establish what features impacts in the price rather in a possitive or a negative way.
+- We took a look on the reviews per room type, wranglin the data and using visualization to drive the analysis.
