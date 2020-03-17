@@ -4,9 +4,9 @@
 ## Business Understanding
 From the dataset is possible to know what are the preference of the users when they are staying in Boston. We will try to answer this questions using the dataset:
 
-What do the users look for in an Airbnb?
-What impacts the prices negatively?
-What room type gets better reviews?
+- What do the users look for in an Airbnb?
+- What impacts the prices negatively?
+- What room type gets better reviews?
 
 ## Data Understandin
 Boston Airbnb dataset consists of 3585 rows and 95 columns, each row is a listing
