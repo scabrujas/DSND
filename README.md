@@ -1,6 +1,9 @@
 
 # How to succeed in Airbnb Boston's market
 
+## Project Motivation
+Use the Cross-Industry Standard Process of Data Mining (CRISP-DM) and the Boston Airbnb datasets to answer 3 business questions
+
 ## Business Understanding
 From the dataset is possible to know what are the preference of the users when they are staying in Boston. We will try to answer this questions using the dataset:
 
@@ -19,3 +22,7 @@ Using the Linear Regression model on the processed data, and getting the coeffic
 
 ## Results and discussion:
 Published in https://medium.com/@scabrujas/how-to-succeed-in-airbnb-bostons-market-7807a116d6f5
+
+## File Description
+Jupyter Notebook with the data analysis and the ML model (Project1.ipynb)
+Boston Airbnb data (listings.csv): http://insideairbnb.com/get-the-data.html 
