@@ -1,41 +1,47 @@
 
-# How to succeed in Airbnb Boston's market
+# Disaster Response Pipelines
 
 ## Project Motivation
-Use the Cross-Industry Standard Process of Data Mining (CRISP-DM) and the Boston Airbnb datasets to estimate the price, know which factors impact the most on it and get to know better the users.
 
-## Business Understanding
-From the dataset is possible to know what are the preference of the users when they are staying in Boston. We will try to answer this questions using the dataset:
-
-- What do the users look for in an Airbnb?
-- What impacts the prices negatively?
-- What room type gets better reviews?
-
-## Data Understanding
-Boston Airbnb dataset consists of 3585 rows and 95 columns, each row is a listing
-
-## Process the Data
-The columns were cleaned, the NAN values filled with the mean and the median according to the needs and the qualitative data processed, more details in the Preprocessing section
-
-## Data Modeling
-Using the Linear Regression model on the processed data, and getting the coefficients of every feature we can know the relevance of each feature, more details in the Result section
-
-## Results and discussion:
-Published in https://medium.com/@scabrujas/how-to-succeed-in-airbnb-bostons-market-7807a116d6f5
-
-## File Description
-Jupyter Notebook with the data analysis and the ML model (Project1.ipynb)
-Boston Airbnb data (listings.csv): http://insideairbnb.com/get-the-data.html
+Build an application to classify and show insights on, disaster message data provided by Figure Eight,using NLP and data engineering to create and train a machine learning model.
 
 ## Libraries used:
 - Pandas
 - Numpy
 - Scikit-learn
-- Seaborn
-- Matplot
+- Plotly
+- Flask
+- Plotly
+- sqlalchemy
 
-## Conclusions
-- We preprocessed the Boston Airbnb data,taking care of missing values and qualitative variables.
-- We created a Machine Learning model to estimate the Airbnb prices in Boston.
-- We establish what features impacts in the price rather in a possitive or a negative way.
-- We took a look on the reviews per room type, wranglin the data and using visualization to drive the analysis.
+## Structure :
+
+├── app     
+│   ├── run.py                                    # Flask file that runs app
+│   └── templates   
+│       ├── go.html                               # Classification result page of web app
+│       └── master.html                           # Main page of web app    
+├── data                   
+│   ├── disaster_categories.csv                   # Dataset including all the categories  
+│   ├── disaster_messages.csv                     # Dataset including all the messages
+│   ├── ETL Pipeline Preparation.ipynb            # ETL process preparation
+│   └── process_data.py                           # Data cleaning
+│   
+├── models
+│   ├── ML Pipeline Preparation.ipynb            # Machine Learning model preparation
+│   └── train_classifier.py                      # Train ML model           
+└── README.md
+
+## Instructions:
+1. Run the following commands in the project's root directory to set up your database and model.
+
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python app/run.py`
+
+3. Go to http://0.0.0.0:3001/
+
