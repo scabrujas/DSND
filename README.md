@@ -5,31 +5,22 @@
 
 Build an application to classify and show insights on, disaster message data provided by Figure Eight,using NLP and data engineering to create and train a machine learning model.
 
-## Libraries used:
-- Pandas
-- Numpy
-- Scikit-learn
-- Plotly
-- Flask
-- Plotly
-- sqlalchemy
-
 ## Structure :
 
 ├── app     
-│   ├── run.py                                    # Flask file that runs app
+│   ├── run.py                                # Flask file that runs app
 │   └── templates   
-│       ├── go.html                               # Classification result page of web app
-│       └── master.html                           # Main page of web app    
+│       ├── go.html                           # Classification result page of web app
+│       └── master.html                       # Main page of web app    
 ├── data                   
-│   ├── disaster_categories.csv                   # Dataset including all the categories  
-│   ├── disaster_messages.csv                     # Dataset including all the messages
-│   ├── ETL Pipeline Preparation.ipynb            # ETL process preparation
-│   └── process_data.py                           # Data cleaning
+│   ├── disaster_categories.csv               # Dataset including all the categories  
+│   ├── disaster_messages.csv                 # Dataset including all the messages
+│   ├── ETL Pipeline Preparation.ipynb        # ETL process preparation
+│   └── process_data.py                       # Data cleaning
 │   
 ├── models
-│   ├── ML Pipeline Preparation.ipynb            # Machine Learning model preparation
-│   └── train_classifier.py                      # Train ML model           
+│   ├── ML Pipeline Preparation.ipynb         # Machine Learning model preparation
+│   └── train_classifier.py                   # Train ML model           
 └── README.md
 
 ## Instructions:
@@ -44,4 +35,13 @@ Build an application to classify and show insights on, disaster message data pro
     `python app/run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+## Libraries used:
+- Pandas
+- Numpy
+- Scikit-learn
+- Plotly
+- Flask
+- Plotly
+- sqlalchemy
 
