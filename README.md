@@ -3,7 +3,7 @@
 
 ## Project Motivation
 
-Build an application to classify and show insights on, disaster message data provided by Figure Eight,using NLP and data engineering to create and train a machine learning model.
+Build an application to classify and show insights on disaster message data provided by Figure Eight,using NLP and data engineering to create and train a machine learning model.
 
 ## Structure :
         .
